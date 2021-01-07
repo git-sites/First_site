@@ -1,0 +1,54 @@
+
+
+#heading{
+    margin: 0px 0px 10px 0px;
+    padding: 5px;
+    color: crimson; 
+    background-color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8vw;
+    text-align: center;
+}
+
+#heading:hover{
+    color: rgb(0, 0, 255);
+}
+.nav {
+    text-align: center;
+    margin: 20px 0px;
+    background-color: black;
+    color: white;
+}
+.nav a{
+    text-decoration: none;
+    display: inline;
+    color: white;
+    padding-inline: 10px;
+}
+
+.nav a:hover{
+    background-color: #15ff00;
+    color: darkblue;
+    box-shadow: 0px 0px 20px #15ff00;
+
+}
+
+.text{
+    padding: 0px 10px;
+    text-indent: 20px;
+}
+
+.content{
+    text-align: center;
+}
+.box{
+    display: inline-block;
+    margin-bottom: 2%;
+    padding: 0.1%;
+    max-width: 30vw;
+    background-color: cadetblue;
+}
+
+.box img{
+    max-width: inherit;
+}
