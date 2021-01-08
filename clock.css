@@ -1,0 +1,110 @@
+body{
+    background-color: darkslategrey;
+}
+.frame{
+    background-color: #2fffe3;
+    width: 70vw;
+    height: 70vw;
+    border: double blue;
+    border-radius: 20vw;
+    transform: translateX(15%);
+}
+
+.hand{
+    width: 50vw;
+    height: 1vw;
+    transform-origin:  15vw;
+}
+
+.hour{
+    background-color: #00f100 ;
+    position: absolute;
+
+    animation: rotate 216000s infinite linear forwards;
+
+}
+.minute{
+    background-color:#f3db00;
+    position: absolute;
+    
+
+    /* transform: translate(20vw,35vw) rotateZ(330deg); */
+    animation: rotate 3600s infinite linear forwards;
+
+}
+.second{
+    background-color: darkblue;
+    position: absolute;
+
+    /* transform: translate(20vw,35vw) rotateZ(0deg); */
+    animation: rotate 60s infinite linear forwards;
+}
+
+@keyframes rotate{
+    0%{transform: translate(20vw,35vw) rotateZ(0deg);}
+    100%{transform: translate(20vw,35vw) rotateZ(360deg);}
+}
+
+.num{
+    text-align: center;
+}
+.num h1{
+    /* background-color: chartreuse; */
+    font-size: 5vw;
+    font-weight: bolder;
+    font-family: cursive;
+    position: absolute;
+    height: 7vw;
+    width: 7vw;
+    border-radius: 7vw;
+}
+
+.num h1:nth-child(1){
+    transform: translate(50vw,-3vw);
+}
+.num h1:nth-child(2){
+    transform: translate(64vw,10vw);
+}
+.num h1:nth-child(3){
+    transform: translate(65vw,29vw);
+}
+.num h1:nth-child(4){
+    transform: translate(64vw,48vw);
+}
+.num h1:nth-child(5){
+    transform: translate(50vw,60vw);
+}
+.num h1:nth-child(6){
+    transform: translate(32vw,61vw);
+}
+.num h1:nth-child(7){
+    transform: translate(13vw,60vw);
+}
+.num h1:nth-child(8){
+    transform: translate(-1vw,48vw);
+}
+.num h1:nth-child(9){
+    transform: translate(-2vw,29vw);
+}
+.num h1:nth-child(10){
+    transform: translate(-1vw,10vw);
+}
+.num h1:nth-child(11){
+    transform: translate(13vw,-3vw);
+}
+.num h1:nth-child(12){
+    transform: translate(32vw,-4vw);
+}
+
+.text{
+    color: #ff00ff;
+    position: absolute;
+    font-size: 2.3vw;
+    transform: translate(22vw, -20vw);
+}
+
+.details{
+    color: rgb(128, 255, 0);
+    font-size: 2.5vw;
+    transform: translate(10vw,0vw);
+}
