@@ -1,0 +1,28 @@
+.container{
+    text-align: center;
+}
+
+.tile{
+    display: inline-block;
+    margin: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 300px;
+    width: 200px;
+    border-radius: 5%;
+    background-color: rgb(240, 255, 103);
+
+}
+
+a{
+    width: inherit;
+    text-decoration: none;
+}
+img{
+    width: inherit;
+}
+
+.text{
+    color: tomato;
+
+}
