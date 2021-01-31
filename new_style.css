@@ -1,4 +1,7 @@
-
+body{
+    background: #01304b;
+    color: aqua;
+}
 
 #heading{
     margin: 0px 0px 10px 0px;
@@ -38,32 +41,46 @@
     text-indent: 20px;
 }
 
+
 .content{
     text-align: center;
 }
+
 .box{
     display: inline-block;
     margin-bottom: 2%;
     padding: 0.1%;
-    width: 340px;
-    /* background-color: cadetblue; */
-    
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 600px;
+
 }
 
-.box img{
-    width: inherit;
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition:0.5s;
+    transform-style: preserve-3d;
 }
 
 
-.box:hover{
-    animation: flip 3s linear forwards;
-    cursor: pointer;
+.inner:hover{
+    transform: rotateY(180deg);
 }
 
-@keyframes flip{
-    0%{transform: rotateY(0deg);}
-    15%{transform: rotateY(90deg);}
-    50%{transform: rotateY(180deg);}
-    75%{transform: rotateY(270deg);}
-    100%{transform: rotateY(360deg);}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back{
+    background-color: rgb(3, 3, 109);
+    transform: rotateY(180deg);
 }
